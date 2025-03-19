@@ -42,7 +42,7 @@ function HydrationScale() {
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
                             onClick={handleClick}
-                            src="src/assets/drop.svg"
+                            src="drop.svg"
                             className="logo"
                             alt="Drop of water button"
                         />
@@ -53,7 +53,7 @@ function HydrationScale() {
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
                             onClick={handleClick}
-                            src="src/assets/dropGrey.svg"
+                            src="dropGrey.svg"
                             className="logo"
                             alt="Drop of water button"
                         />
