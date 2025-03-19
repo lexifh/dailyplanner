@@ -52,10 +52,7 @@ function ToDoList() {
                     value={listItem}
                 />
                 <button onClick={addListItem}>
-                    <img
-                        src="./src/assets/plusGrey.svg"
-                        alt="Plus symbol for add button"
-                    />
+                    <img src="plusGrey.svg" alt="Plus symbol for add button" />
                 </button>
             </div>
             <ul className="no-bullets">

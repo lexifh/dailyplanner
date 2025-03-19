@@ -60,7 +60,7 @@ function ListItem(props) {
                                 }}
                             >
                                 <img
-                                    src="./src/assets/plusGrey.svg"
+                                    src="plusGrey.svg"
                                     alt="Plus symbol for add button"
                                     className="listButtonImg"
                                 />
@@ -70,7 +70,7 @@ function ListItem(props) {
                                 onClick={cancelChange}
                             >
                                 <img
-                                    src="./src/assets/arrowLeftGrey.svg"
+                                    src="arrowLeftGrey.svg"
                                     alt="Arrow left symbol for cancel button"
                                     className="listButtonImg"
                                 />
@@ -82,7 +82,7 @@ function ListItem(props) {
                             onClick={changeItem}
                         >
                             <img
-                                src="./src/assets/penGrey.svg"
+                                src="penGrey.svg"
                                 alt="Pen symbol for change button"
                                 className="listButtonImg"
                             />
@@ -94,7 +94,7 @@ function ListItem(props) {
                         }}
                     >
                         <img
-                            src="./src/assets/deleteGrey.svg"
+                            src="deleteGrey.svg"
                             alt="Delete symbol for delete button"
                             className="listButtonImg"
                         />

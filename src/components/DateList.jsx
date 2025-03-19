@@ -3,8 +3,6 @@ import ListItem from "./ListItem";
 import TimePicker from "./TimePicker";
 import "./css/DateList.css";
 
-//ToDo: Add function to change back done status
-
 function DateList() {
     const [list, setList] = useState([]);
     const [listItem, setListItem] = useState({ value: "", time: "00:00" });
@@ -65,10 +63,7 @@ function DateList() {
                     value={listItem.value}
                 />
                 <button onClick={addListItem}>
-                    <img
-                        src="./src/assets/plusGrey.svg"
-                        alt="Plus symbol for add button"
-                    />
+                    <img src="plusGrey.svg" alt="Plus symbol for add button" />
                 </button>
             </div>
             <ul className="no-bullets">
