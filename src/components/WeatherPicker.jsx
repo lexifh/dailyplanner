@@ -68,16 +68,24 @@ function WeatherPicker() {
             </div>
             <div className="flex-container-weather">
                 {weather.map((weatherObject, index) => {
-                    return (
+                    return weatherObject.state ? (
                         <img
                             id={index + "weather"}
                             key={index}
                             onClick={handleClick}
-                            src={
-                                weatherObject.state
-                                    ? weatherObject.imgSrcActive
-                                    : weatherObject.imgSrcInactive
+                            src={weatherObject.imgSrcActive}
+                            alt={
+                                "Weather picker " +
+                                weatherObject.description +
+                                " button"
                             }
+                        />
+                    ) : (
+                        <img
+                            id={index + "weather"}
+                            key={index}
+                            onClick={handleClick}
+                            src={weatherObject.imgSrcInactive}
                             alt={
                                 "Weather picker " +
                                 weatherObject.description +
