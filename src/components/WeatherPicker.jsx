@@ -49,12 +49,13 @@ function WeatherPicker() {
     const [weather, setWeather] = useState(weatherObjects);
 
     function handleClick(event) {
-        const selectedImg = event.target;
-        const changedWeatherObjects = weatherObjects;
+        const selectedImgId = event.target.id;
+        let changedWeatherObjects = [];
 
-        changedWeatherObjects.forEach((weatherObject) => {
-            if (weatherObject.id === selectedImg.id) {
-                weatherObject.state = true;
+        weatherObjects.forEach((weatherObject, index) => {
+            changedWeatherObjects.push(weatherObject);
+            if (weatherObject.id === selectedImgId) {
+                changedWeatherObjects[index].state = true;
             }
         });
 
